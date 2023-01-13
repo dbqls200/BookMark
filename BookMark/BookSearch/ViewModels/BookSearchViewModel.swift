@@ -6,3 +6,48 @@
 //
 
 import Foundation
+
+import Alamofire
+
+class BookSearchViewModel: ObservableObject {
+    static let shared = BookSearchViewModel()
+    
+    private init() { }
+    
+    @Published var bookList = [Book]()
+    var query: String = "돈"
+    
+    func requestSearchBookList() {
+        let baseURL = "https://openapi.naver.com/v1/search/book.json"
+        
+        let headers: HTTPHeaders = [
+            "X-Naver-Client-Id": "0nYJJb7rgjEC71U_lDmT",
+            "X-Naver-Client-Secret": "Q1Sm4dGGVf",
+        ]
+        
+        let parameters: Parameters = [
+            "query": query
+        ]
+        
+        AF.request(baseURL,
+                   method: .get,
+                   parameters: parameters,
+                   encoding: URLEncoding.default,
+                   headers: headers)
+        .validate(statusCode: 200...500)
+        .responseDecodable(of: BookList.self) { response in
+            switch response.result {
+            case .success(let data):
+                guard let statusCode = response.response?.statusCode else { return }
+                if statusCode == 200 {
+                    DispatchQueue.main.async {
+                        self.bookList = data.items
+                    }
+                }
+                print("\(#file) > \(#function) :: SUCCESS")
+            case .failure:
+                print("\(#file) > \(#function) :: FAILURE")
+            }
+        }
+    }
+}

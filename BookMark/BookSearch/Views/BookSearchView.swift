@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct BookSearchView: View {
+    @StateObject private var viewModel = BookSearchViewModel.shared
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                ForEach(viewModel.bookList, id: \.self) { book in
+                    BookSearchRowView(title: book.title, author: book.author, publisher: book.publisher, imageURL: book.image)
+                }
+                .navigationTitle("📚 BookMark 북마크")
+            }
+        }
+        .onAppear {
+            viewModel.requestSearchBookList()
+        }
+
     }
 }
 
