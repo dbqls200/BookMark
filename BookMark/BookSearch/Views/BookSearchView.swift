@@ -20,6 +20,7 @@ struct BookSearchView: View {
                 .searchable(text: $searchKeyword, prompt: "검색어를 입력하세요")
                 .navigationTitle("📚 BookMark 북마크")
             }
+            .scrollDismissesKeyboard(.immediately)
             
         }
         .onChange(of: searchKeyword, perform: { _ in
