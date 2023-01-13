@@ -1,0 +1,6 @@
+framework module Pods_BookMark_BookMarkUITests {
+  umbrella header "Pods-BookMark-BookMarkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
