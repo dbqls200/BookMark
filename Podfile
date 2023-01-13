@@ -9,6 +9,9 @@ target 'BookMark' do
 
   # 네트워크 라이브러리
   pod 'Alamofire', '5.1'
+  
+  # URL 이미지 라이브러리
+  pod 'URLImage'
 
   target 'BookMarkTests' do
     inherit! :search_paths
