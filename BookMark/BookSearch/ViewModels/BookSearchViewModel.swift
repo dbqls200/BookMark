@@ -15,9 +15,8 @@ class BookSearchViewModel: ObservableObject {
     private init() { }
     
     @Published var bookList = [Book]()
-    var query: String = "돈"
     
-    func requestSearchBookList() {
+    func requestSearchBookList(query: String) {
         let baseURL = "https://openapi.naver.com/v1/search/book.json"
         
         let headers: HTTPHeaders = [
@@ -26,7 +25,8 @@ class BookSearchViewModel: ObservableObject {
         ]
         
         let parameters: Parameters = [
-            "query": query
+            "query": query,
+            "display": 50
         ]
         
         AF.request(baseURL,
@@ -45,8 +45,8 @@ class BookSearchViewModel: ObservableObject {
                     }
                 }
                 print("\(#file) > \(#function) :: SUCCESS")
-            case .failure:
-                print("\(#file) > \(#function) :: FAILURE")
+            case .failure(let error):
+                print("\(#file) > \(#function) :: FAILURE : \(error)")
             }
         }
     }
