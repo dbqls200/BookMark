@@ -10,12 +10,27 @@ import SwiftUI
 struct BookSearchView: View {
     @StateObject private var viewModel = BookSearchViewModel.shared
     @State var searchKeyword: String = ""
+    @State var showAddAlert: Bool = false
     
     var body: some View {
         NavigationView {
             ScrollView {
                 ForEach(viewModel.bookList, id: \.self) { book in
-                    BookSearchRowView(title: book.title, author: book.author, publisher: book.publisher, imageURL: book.image)
+                    Button {
+                        self.showAddAlert.toggle()
+                    } label: {
+                        BookSearchRowView(book: book)
+                    }
+                    .alert("add alert".localized(), isPresented: $showAddAlert) {
+                        
+                        Button("add".localized(), role: .none) {
+                            // 1/14 Add 누르면 my list에 추가 기능 추후 작업
+
+                        }
+
+                        Button("cancel".localized(), role: .cancel, action: { })
+                    }
+
                 }
                 .searchable(text: $searchKeyword, prompt: "search keyword".localized())
                 .navigationTitle("search title".localized())
@@ -32,6 +47,6 @@ struct BookSearchView: View {
 
 struct BookSearchView_Previews: PreviewProvider {
     static var previews: some View {
-        BookSearchView(searchKeyword: "역행자")
+        BookSearchView(searchKeyword: "")
     }
 }
