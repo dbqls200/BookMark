@@ -10,16 +10,17 @@
 		2853286D7B5C8657AA2BF6E2 /* Pods_BookMarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0634748C1B2B1E9AB6E9148F /* Pods_BookMarkTests.framework */; };
 		2D1792F120AE6B7E7D9865EF /* Pods_BookMark_BookMarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE0D97CE21C9309C8379535 /* Pods_BookMark_BookMarkUITests.framework */; };
 		6FD483EE7B1F9EF82129E1BF /* Pods_BookMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B53A072B755B88F76123F0E /* Pods_BookMark.framework */; };
+		D83CF712297278960032A43D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D83CF714297278960032A43D /* Localizable.strings */; };
+		D83CF71729727CAC0032A43D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CF71629727CAC0032A43D /* StringExtension.swift */; };
 		D8AD97F7297160C6001AE558 /* BookSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F0297160C6001AE558 /* BookSearchViewModel.swift */; };
 		D8AD97F8297160C6001AE558 /* BookSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F2297160C6001AE558 /* BookSearchModel.swift */; };
 		D8AD97F9297160C6001AE558 /* BookSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F4297160C6001AE558 /* BookSearchView.swift */; };
 		D8AD97FA297160C6001AE558 /* BookSearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F6297160C6001AE558 /* BookSearchRowView.swift */; };
-		D8AD97FE29716117001AE558 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97FD29716117001AE558 /* MainView.swift */; };
 		D8AD98022971611A001AE558 /* MyBookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD98012971611A001AE558 /* MyBookListView.swift */; };
 		D8AD980A29716120001AE558 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD980529716120001AE558 /* ColorExtension.swift */; };
 		D8AD980B29716120001AE558 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD980729716120001AE558 /* HTTPMethod.swift */; };
-		D8AD980C29716120001AE558 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD980829716120001AE558 /* Const.swift */; };
 		D8AD980F29716123001AE558 /* NaverAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD980E29716123001AE558 /* NaverAPIManager.swift */; };
+		D8AD981329716588001AE558 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD981229716588001AE558 /* MainView.swift */; };
 		D8C645FA296FCD6C00F1788C /* BookMarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C645F9296FCD6C00F1788C /* BookMarkApp.swift */; };
 		D8C645FC296FCD6C00F1788C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C645FB296FCD6C00F1788C /* ContentView.swift */; };
 		D8C645FE296FCD6E00F1788C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C645FD296FCD6E00F1788C /* Assets.xcassets */; };
@@ -55,16 +56,18 @@
 		58B60F12C7B7E0A176175498 /* Pods-BookMark-BookMarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMark-BookMarkUITests.release.xcconfig"; path = "Target Support Files/Pods-BookMark-BookMarkUITests/Pods-BookMark-BookMarkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AEAA0129621F762D1239F6D6 /* Pods-BookMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMark.release.xcconfig"; path = "Target Support Files/Pods-BookMark/Pods-BookMark.release.xcconfig"; sourceTree = "<group>"; };
 		CF9488F01DA31CD538AFBA6D /* Pods-BookMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMark.debug.xcconfig"; path = "Target Support Files/Pods-BookMark/Pods-BookMark.debug.xcconfig"; sourceTree = "<group>"; };
+		D83CF713297278960032A43D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D83CF715297278BB0032A43D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D83CF71629727CAC0032A43D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D8AD97F0297160C6001AE558 /* BookSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchViewModel.swift; sourceTree = "<group>"; };
 		D8AD97F2297160C6001AE558 /* BookSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchModel.swift; sourceTree = "<group>"; };
 		D8AD97F4297160C6001AE558 /* BookSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchView.swift; sourceTree = "<group>"; };
 		D8AD97F6297160C6001AE558 /* BookSearchRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchRowView.swift; sourceTree = "<group>"; };
-		D8AD97FD29716117001AE558 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D8AD98012971611A001AE558 /* MyBookListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBookListView.swift; sourceTree = "<group>"; };
 		D8AD980529716120001AE558 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D8AD980729716120001AE558 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		D8AD980829716120001AE558 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		D8AD980E29716123001AE558 /* NaverAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaverAPIManager.swift; sourceTree = "<group>"; };
+		D8AD981229716588001AE558 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D8C645F6296FCD6C00F1788C /* BookMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C645F9296FCD6C00F1788C /* BookMarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkApp.swift; sourceTree = "<group>"; };
 		D8C645FB296FCD6C00F1788C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D83CF71829727CB30032A43D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D83CF71629727CAC0032A43D /* StringExtension.swift */,
+				D8AD980529716120001AE558 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D8AD97EE297160C6001AE558 /* BookSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +195,7 @@
 		D8AD97FC29716117001AE558 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D8AD97FD29716117001AE558 /* MainView.swift */,
+				D8AD981229716588001AE558 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,9 +219,9 @@
 		D8AD980329716120001AE558 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				D83CF71829727CB30032A43D /* Extension */,
 				D8AD980629716120001AE558 /* HTTP */,
-				D8AD980529716120001AE558 /* ColorExtension.swift */,
-				D8AD980829716120001AE558 /* Const.swift */,
+				D83CF714297278960032A43D /* Localizable.strings */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -384,6 +396,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = D8C645ED296FCD6C00F1788C;
 			productRefGroup = D8C645F7296FCD6C00F1788C /* Products */;
@@ -403,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C64601296FCD6E00F1788C /* Preview Assets.xcassets in Resources */,
+				D83CF712297278960032A43D /* Localizable.strings in Resources */,
 				D8C645FE296FCD6E00F1788C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,16 +546,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C645FC296FCD6C00F1788C /* ContentView.swift in Sources */,
-				D8AD97FE29716117001AE558 /* MainView.swift in Sources */,
+				D8AD981329716588001AE558 /* MainView.swift in Sources */,
 				D8AD97F7297160C6001AE558 /* BookSearchViewModel.swift in Sources */,
 				D8AD980B29716120001AE558 /* HTTPMethod.swift in Sources */,
-				D8AD980C29716120001AE558 /* Const.swift in Sources */,
 				D8AD97F9297160C6001AE558 /* BookSearchView.swift in Sources */,
 				D8AD97F8297160C6001AE558 /* BookSearchModel.swift in Sources */,
 				D8AD97FA297160C6001AE558 /* BookSearchRowView.swift in Sources */,
 				D8C645FA296FCD6C00F1788C /* BookMarkApp.swift in Sources */,
 				D8AD980F29716123001AE558 /* NaverAPIManager.swift in Sources */,
 				D8AD98022971611A001AE558 /* MyBookListView.swift in Sources */,
+				D83CF71729727CAC0032A43D /* StringExtension.swift in Sources */,
 				D8AD980A29716120001AE558 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,11 +592,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		D83CF714297278960032A43D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CF713297278960032A43D /* en */,
+				D83CF715297278BB0032A43D /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D8C64618296FCD6E00F1788C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -643,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
