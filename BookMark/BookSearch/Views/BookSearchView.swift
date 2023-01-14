@@ -17,8 +17,8 @@ struct BookSearchView: View {
                 ForEach(viewModel.bookList, id: \.self) { book in
                     BookSearchRowView(title: book.title, author: book.author, publisher: book.publisher, imageURL: book.image)
                 }
-                .searchable(text: $searchKeyword, prompt: "검색어를 입력하세요")
-                .navigationTitle("📚 BookMark 북마크")
+                .searchable(text: $searchKeyword, prompt: "search keyword".localized())
+                .navigationTitle("search title".localized())
             }
             .scrollDismissesKeyboard(.immediately)
             

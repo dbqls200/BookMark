@@ -6,3 +6,21 @@
   
 */
 
+// MARK: - common
+"bookmark" = "BookMark";
+"ok" = "OK";
+"cancel" = "Cancel";
+"add" = "Add";
+"sorry" = "Sorry : (";
+
+// MARK: - main View
+"search tab" = "Search";
+"my list tab" = "My List";
+
+// MARK: - search View
+"search title" = "📙 BookMark";
+"search keyword" = "Search for the book you want to find";
+"add alert" = "Do you want to add this book to 'My List'?";
+
+// MARK: - my list View
+"my list title" = "📚 the Books I read";

@@ -6,3 +6,21 @@
   
 */
 
+// MARK: - common
+"bookmark" = "BookMark 북마크";
+"ok" = "OK";
+"cancel" = "취소";
+"add" = "추가하기";
+"sorry" = "Sorry : (";
+
+// MARK: - main View
+"search tab" = "Search";
+"my list tab" = "My List";
+
+// MARK: - search View
+"search title" = "📙 BookMark 북마크";
+"search keyword" = "찾고 싶은 도서를 검색해주세요";
+"add alert" = "My List에 추가할까요?";
+
+// MARK: - my list View
+"my list title" = "📚 내가 읽은 책들";

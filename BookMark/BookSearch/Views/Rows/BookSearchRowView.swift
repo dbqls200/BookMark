@@ -32,7 +32,7 @@ struct BookSearchRowView: View {
                                 .foregroundColor(.lightGray)
                                 .frame(width: 75, height: 105)
                                 .overlay(content: {
-                                    Text("Sorry : (")
+                                    Text("sorry".localized())
                                         .foregroundColor(.white)
                                         .font(.system(size: 12, weight: .semibold))
                                 }) },
@@ -65,6 +65,6 @@ struct BookSearchRowView: View {
 
 struct BookListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        BookSearchRowView(title: "역행자", author: "자청", publisher: "웅진어쩌고 퍼블리셔", imageURL: "https://")
+        BookSearchRowView(title: "역행자 TEST", author: "자청 TEST", publisher: "웅진어쩌고 퍼블리셔 TEST", imageURL: "https://")
     }
 }
