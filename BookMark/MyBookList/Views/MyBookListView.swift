@@ -8,13 +8,47 @@
 import SwiftUI
 
 struct MyBookListView: View {
+    @StateObject private var coreDataManager = CoreDataManager.shared
+
     var body: some View {
         NavigationView {
-            ScrollView {
-                
+            VStack(alignment: .leading) {
+                if !coreDataManager.savedEntities.isEmpty {
+                    numberOfBooksView
+
+                    ScrollView {
+                        ForEach(coreDataManager.savedEntities, id: \.self) { entity in
+                            Button {
+                                coreDataManager.deleteBook(book: entity)
+                            } label: {
+                                MyBookRowView(book: entity)
+                            }
+                        }
+                    }
+                } else {
+                    emptyView
+                }
             }
             .navigationTitle("my list title".localized())
         }
+    }
+    
+    var emptyView: some View {
+        VStack {
+            HStack {
+                numberOfBooksView
+                Spacer()
+            }
+            Spacer()
+            Text("no read books".localized())
+            Spacer()
+        }
+    }
+    
+    var numberOfBooksView: some View {
+        Text(String(format: "number of books".localized(), coreDataManager.savedEntities.count))
+            .font(.system(size: 20, weight: .bold))
+            .padding(.horizontal, 16)
     }
 }
 
