@@ -20,8 +20,8 @@ class BookSearchViewModel: ObservableObject {
         let baseURL = "https://openapi.naver.com/v1/search/book.json"
         
         let headers: HTTPHeaders = [
-            "X-Naver-Client-Id": "0nYJJb7rgjEC71U_lDmT",
-            "X-Naver-Client-Secret": "Q1Sm4dGGVf",
+            "X-Naver-Client-Id": Storage().naverClientID,
+            "X-Naver-Client-Secret": Storage().naverClientSecret,
         ]
         
         let parameters: Parameters = [

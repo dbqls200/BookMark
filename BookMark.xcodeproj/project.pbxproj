@@ -19,6 +19,7 @@
 		D83CF7342972F7CD0032A43D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CF7332972F7CD0032A43D /* CoreDataManager.swift */; };
 		D83E91F3297521DF00976FBF /* BookSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E91F2297521DF00976FBF /* BookSearchDetailView.swift */; };
 		D83E91F629753A2E00976FBF /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E91F529753A2E00976FBF /* HapticManager.swift */; };
+		D83E91FC29753FE300976FBF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E91FB29753FE300976FBF /* Storage.swift */; };
 		D8AD97F7297160C6001AE558 /* BookSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F0297160C6001AE558 /* BookSearchViewModel.swift */; };
 		D8AD97F8297160C6001AE558 /* BookSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F2297160C6001AE558 /* BookSearchModel.swift */; };
 		D8AD97F9297160C6001AE558 /* BookSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD97F4297160C6001AE558 /* BookSearchView.swift */; };
@@ -73,6 +74,7 @@
 		D83CF7332972F7CD0032A43D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		D83E91F2297521DF00976FBF /* BookSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchDetailView.swift; sourceTree = "<group>"; };
 		D83E91F529753A2E00976FBF /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		D83E91FB29753FE300976FBF /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		D8AD97F0297160C6001AE558 /* BookSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchViewModel.swift; sourceTree = "<group>"; };
 		D8AD97F2297160C6001AE558 /* BookSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchModel.swift; sourceTree = "<group>"; };
 		D8AD97F4297160C6001AE558 /* BookSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchView.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				D83CF71829727CB30032A43D /* Extension */,
 				D8AD980629716120001AE558 /* HTTP */,
 				D83CF714297278960032A43D /* Localizable.strings */,
+				D83E91FB29753FE300976FBF /* Storage.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				D83E91F629753A2E00976FBF /* HapticManager.swift in Sources */,
 				D83CF7232972BA980032A43D /* BookModel.xcdatamodeld in Sources */,
 				D8AD980B29716120001AE558 /* HTTPMethod.swift in Sources */,
+				D83E91FC29753FE300976FBF /* Storage.swift in Sources */,
 				D8AD97F9297160C6001AE558 /* BookSearchView.swift in Sources */,
 				D8AD97F8297160C6001AE558 /* BookSearchModel.swift in Sources */,
 				D8AD97FA297160C6001AE558 /* BookSearchRowView.swift in Sources */,
