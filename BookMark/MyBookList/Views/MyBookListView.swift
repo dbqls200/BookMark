@@ -9,20 +9,22 @@ import SwiftUI
 
 struct MyBookListView: View {
     @StateObject private var coreDataManager = CoreDataManager.shared
-
+    @State private var showAlert: Bool = false
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 if !coreDataManager.savedEntities.isEmpty {
                     numberOfBooksView
-
+                    
                     ScrollView {
                         ForEach(coreDataManager.savedEntities, id: \.self) { entity in
                             Button {
                                 coreDataManager.deleteBook(book: entity)
+                                HapticManager.shared.notification(type: .warning)
                             } label: {
-                                MyBookRowView(book: entity)
-                            }
+                                    MyBookRowView(book: entity)
+                                }
                         }
                     }
                 } else {

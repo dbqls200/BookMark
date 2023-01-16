@@ -10,7 +10,7 @@
 "bookmark" = "BookMark 북마크";
 "ok" = "OK";
 "cancel" = "취소";
-"add" = "추가하기";
+"add" = "추가";
 "sorry" = "Sorry :(";
 
 // MARK: - main View
@@ -22,7 +22,12 @@
 "search keyword" = "찾고 싶은 도서를 검색해주세요";
 "add alert" = "My List에 추가할까요?";
 
+// MARK: - book detail View
+"description" = "소개";
+"delete" = "삭제하기";
+
 // MARK: - my list View
 "my list title" = "📚 내가 읽은 책들";
 "number of books" = "❤️‍🔥 지금까지 %d권";
 "no read books" = "읽은 책을 추가해주세요 :)";
+"delete the book" = "도서를 My List에서 삭제할까요?";
