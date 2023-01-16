@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 class HapticManager {
     static let shared = HapticManager()
     private init() {}
@@ -20,22 +19,5 @@ class HapticManager {
     func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
         let generator = UIImpactFeedbackGenerator(style: style)
         generator.impactOccurred()
-    }
-}
-
-struct HapticsBootCamp: View {
-    let hapticManager = HapticManager.shared
-    var body: some View {
-        VStack(spacing: 20) {
-            Button("SUCCESS") { hapticManager.notification(type: .success) }
-            Button("WARNING") { hapticManager.notification(type: .warning) }
-            Button("ERROR") { hapticManager.notification(type: .error) }
-            Divider()
-            Button("SOFT") { hapticManager.impact(style: .soft) }
-            Button("LIGHT") { hapticManager.impact(style: .light) }
-            Button("MEDIUM") { hapticManager.impact(style: .medium) }
-            Button("RIGID") { hapticManager.impact(style: .rigid) }
-            Button("HEAVY") { hapticManager.impact(style: .heavy) }
-        }
     }
 }
