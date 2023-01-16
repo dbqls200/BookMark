@@ -70,7 +70,11 @@ func createImage(url: String) -> some View {
 
 struct BookListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        let book: Book = Book(title: "역행자", image: "https://shopping-phinf.pstatic.net/main_3255028/32550285396.20221004114149.jpg", author: "자청 TEST", publisher: "웅진지식하우스 TEST")
+        let book: Book = Book(title: "역행자",
+                              image: "https://shopping-phinf.pstatic.net/main_3255028/32550285396.20221004114149.jpg",
+                              author: "자청 TEST",
+                              publisher: "웅진지식하우스 TEST",
+                              description: "Description TEST")
         
         BookSearchRowView(book: book)
     }

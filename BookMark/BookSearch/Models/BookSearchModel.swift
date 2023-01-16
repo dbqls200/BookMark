@@ -19,4 +19,5 @@ struct Book: Codable, Hashable {
     let image: String
     let author: String
     let publisher: String
+    let description: String
 }

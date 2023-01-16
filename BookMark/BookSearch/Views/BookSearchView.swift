@@ -13,11 +13,12 @@ struct BookSearchView: View {
     @State var showAddAlert: Bool = true
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 ForEach(viewModel.bookList, id: \.self) { book in
                     NavigationLink {
-                        // 1/16 도서별 디테일 뷰로 넘어가게끔
+                        BookSearchDetailView(book: book)
+                            .environmentObject(viewModel)
                     } label: {
                         BookSearchRowView(book: book)
                     }

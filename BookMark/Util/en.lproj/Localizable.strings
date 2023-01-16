@@ -22,7 +22,12 @@
 "search keyword" = "Search for the book you want to find";
 "add alert" = "Do you want to add this book to 'My List'?";
 
+// MARK: - book detail View
+"description" = "Description";
+"delete" = "Delete";
+
 // MARK: - my list View
 "my list title" = "📚 the Books I read";
 "number of books" = "❤️‍🔥 %d books so far";
 "no read books" = "Please add the book you read :)";
+"delete the book" = "Would you like to delete this book from 'My List'?";
