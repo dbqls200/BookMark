@@ -32,11 +32,13 @@ class CoreDataManager: ObservableObject {
     
     func addBook(title: String, image: String, author: String, publisher: String) {
         let book = BookRead(context: container.viewContext)
-        book.title = title
-        book.image = image
-        book.author = author
-        book.publisher = publisher
-        saveData()
+        if savedEntities.filter({$0.title == title}).isEmpty {
+            book.title = title
+            book.image = image
+            book.author = author
+            book.publisher = publisher
+            saveData()
+        }
     }
     
     func deleteBook(book: BookRead) {
