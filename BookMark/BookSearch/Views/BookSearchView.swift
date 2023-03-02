@@ -13,7 +13,7 @@ struct BookSearchView: View {
     @State var showAddAlert: Bool = true
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
                 ForEach(viewModel.bookList, id: \.self) { book in
                     NavigationLink {
@@ -26,7 +26,7 @@ struct BookSearchView: View {
                 .searchable(text: $searchKeyword, prompt: "search keyword".localized())
                 .navigationTitle("search title".localized())
             }
-            .scrollDismissesKeyboard(.immediately)
+//            .scrollDismissesKeyboard(.immediately)
         }
         .onChange(of: searchKeyword, perform: { _ in
             viewModel.requestSearchBookList(query: searchKeyword)
