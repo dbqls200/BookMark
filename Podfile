@@ -8,7 +8,7 @@ target 'BookMark' do
   # Pods for BookMark
 
   # 네트워크 라이브러리
-  pod 'Alamofire', '5.1'
+  pod 'Alamofire'
   
   # URL 이미지 라이브러리
   pod 'URLImage'

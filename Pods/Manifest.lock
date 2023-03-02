@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.1.0)
+  - Alamofire (5.6.4)
   - URLImage (2.2.5):
     - URLImage/Common (= 2.2.5)
     - URLImage/DownloadManager (= 2.2.5)
@@ -21,7 +21,7 @@ PODS:
   - URLImage/RemoteContentView (2.2.5)
 
 DEPENDENCIES:
-  - Alamofire (= 5.1)
+  - Alamofire
   - URLImage
 
 SPEC REPOS:
@@ -30,9 +30,9 @@ SPEC REPOS:
     - URLImage
 
 SPEC CHECKSUMS:
-  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   URLImage: 36a66c03ba2a9ccbbf06bc83431f2cef171008e8
 
-PODFILE CHECKSUM: 914a6102e1eec443b4f3cb2133685fc4ebb7b927
+PODFILE CHECKSUM: f3a455591e1559257d32b366df1ab61c9aba114b
 
 COCOAPODS: 1.11.3
