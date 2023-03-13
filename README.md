@@ -27,7 +27,7 @@
 
 |Language|Framework|그 외|
 |:--:|:--:|:--:|
-|<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/>|**SwiftUI**, **CoreData**, **Alamofire**, **URLImage**|<img src="https://img.shields.io/badge/Naver-03C75A?style=flat-square&logo=Naver&logoColor=white"/> **Open API**|
+|<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/>|**SwiftUI**, **CoreData**|<img src="https://img.shields.io/badge/Naver-03C75A?style=flat-square&logo=Naver&logoColor=white"/> **Open API**|
   
   
 ---
@@ -48,16 +48,10 @@
   - 더 효율적인 방법이 없을까 + 분리해서 재사용성을 높일 수 없을까에 대한 고민을 해볼 수 있었다.
   - 위의 고민은 로직 작업을 할 때나 해봤지 UI 작업에서 크게 해본 적이 없었는데, 이번에 최대한 깔끔한 코드 • 불필요한 것을 모두 제거한 코드 • 읽기 쉬운 코드로 작성할 수 있도록 노력했다.
     
-- 다양한 Framework를 사용해볼 수 있었다.
-  - **Alamofir**e를 사용한 네트워크 통신은 인턴 때 경험해봤는데, 그 때는 이미 모든 기반이 짜여져있고 나는 그걸 가져다 쓰기만 했었다.
-    - 이번에 설치부터 통신, 에러 핸들링까지 작성해보면서 서치도 많이 해보고 깊이 있게 배워볼 수 있었다.
-      
-  - **CoreData** Framework를 통해 데이터 저장 및 관리를 해 볼 수 있었다.
+- **CoreData** Framework를 통해 데이터 저장 및 관리를 해 볼 수 있었다.
     - CoreData를 사용할까, Realm DB를 사용할까 고민하다가 예전부터 궁금했던 CoreData를 배워보고자 적용해봤다.
     - 데이터를 쉽게 저장하고 관리할 수 있어 간편했지만 Database가 아니다보니 여러 한계점에 부딪혔다.
       
-  - 서드파티 프레임워크를 통해 간편하게 개발을 진행했다.
-    - **URLImage** 프레임워크를 통해 image URL을 Image로 쉽게 변환했고 UI 작업에서 간편하게 사용할 수 있었다.
       
 - **Rest API**를 사용해봤다.
   - 인턴 때, **Jira Rest API**를 사용해봤었는데, Rest API 사용법을 다시 한 번 익혀보고자 프로젝트에 적용했다.
