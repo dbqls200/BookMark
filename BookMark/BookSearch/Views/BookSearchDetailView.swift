@@ -13,7 +13,7 @@ struct BookSearchDetailView: View {
     var book: Book
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(alignment: .leading, spacing: 0) {
                 ScrollView {
                     BookSearchRowView(book: book)
