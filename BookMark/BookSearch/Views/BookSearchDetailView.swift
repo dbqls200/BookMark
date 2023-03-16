@@ -13,32 +13,30 @@ struct BookSearchDetailView: View {
     var book: Book
     
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading, spacing: 0) {
-                ScrollView {
-                    BookSearchRowView(book: book)
-                    
-                    HStack {
-                        Text("description".localized())
-                            .font(.system(size: 24, weight: .bold))
-                        Spacer()
-                    }
-                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 4, trailing: 16))
-                    
-                    HStack {
-                        Text(book.description)
-                            .font(.system(size: 16, weight: .regular))
-                            .multilineTextAlignment(.leading)
-                            .padding(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16))
-                        Spacer()
-                    }
+        VStack(alignment: .leading, spacing: 0) {
+            ScrollView {
+                BookSearchRowView(book: book)
+                
+                HStack {
+                    Text("description".localized())
+                        .font(.system(size: 24, weight: .bold))
+                    Spacer()
+                }
+                .padding(EdgeInsets(top: 0, leading: 16, bottom: 4, trailing: 16))
+                
+                HStack {
+                    Text(book.description)
+                        .font(.system(size: 16, weight: .regular))
+                        .multilineTextAlignment(.leading)
+                        .padding(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16))
+                    Spacer()
                 }
             }
-            .toolbar {
-                Button("add".localized()) {
-                    CoreDataManager.shared.addBook(title: book.title, image: book.image, author: book.author, publisher: book.publisher)
-                    HapticManager.shared.notification(type: .success)
-                }
+        }
+        .toolbar {
+            Button("add".localized()) {
+                CoreDataManager.shared.addBook(title: book.title, image: book.image, author: book.author, publisher: book.publisher)
+                HapticManager.shared.notification(type: .success)
             }
         }
     }
