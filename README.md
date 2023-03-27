@@ -6,6 +6,8 @@
 - [🗣️ 프로젝트 소개](#프로젝트-소개)  
 - [🛠️ 기술 스택](#기술-스택) 
 - [📚 구현 기능](#구현-기능) 
+- [🗂️ 디렉토리 구조](#디렉토리-구조)
+- [📚 구현 기능](#구현-기능) 
 - [💡 배운 점](#배운-점) 
 - [💧 아쉬운 점 및 보완할 점](#아쉬운-점-및-보완할-점)  
 
@@ -41,6 +43,37 @@
 ## 2. 도서 **기록** 기능
 ![도서기록기능](https://user-images.githubusercontent.com/87077859/212720042-efb6314c-3ae9-4ca1-8b0e-9bc9180239e9.png)
 
+---
+# 디렉토리 구조
+```
+BookMark
+  |
+  └── BookMark
+          |── 🗂 Main
+          │   └── 📁 Views
+          │
+          |── 🗂 BookSearch
+          │   │── 📁 Models
+          │   │── 📁 ViewModels
+          │   └── 📁 Views
+          │       └── 📁 Rows
+          │
+          |── 🗂 MyBookList 
+          │   └── 📁 Views
+          │
+          |── 🗂 Util
+          |   |── 📁 Haptic
+          |   |── 📁 Extension
+          |   |── 📁 HTTP
+          │   |── 📁 Localizable
+          |   |── 🖼 Assets.xcassets
+          │   └── 📄 Storage
+          |
+          └── 🗂 Coredata
+              |── 📁 Views
+              |── 📁 ViewModels
+              └── 📁 Models
+```
 ---
 # 배운 점
 
