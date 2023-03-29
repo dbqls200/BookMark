@@ -262,6 +262,7 @@
 		D8AD980329716120001AE558 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				D8C645FD296FCD6E00F1788C /* Assets.xcassets */,
 				D83E91F429753A2100976FBF /* Haptic */,
 				D83CF71829727CB30032A43D /* Extension */,
 				D8AD980629716120001AE558 /* HTTP */,
@@ -311,7 +312,6 @@
 				D8AD97EE297160C6001AE558 /* BookSearch */,
 				D8C645F9296FCD6C00F1788C /* BookMarkApp.swift */,
 				D8C645FB296FCD6C00F1788C /* ContentView.swift */,
-				D8C645FD296FCD6E00F1788C /* Assets.xcassets */,
 				D8C645FF296FCD6E00F1788C /* Preview Content */,
 			);
 			path = BookMark;
