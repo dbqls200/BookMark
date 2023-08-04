@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 import URLImage
 
 struct BookSearchRowView: View {
@@ -19,7 +20,7 @@ struct BookSearchRowView: View {
                 .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 130)
             
             HStack(spacing: 12) {
-                createImage(url: book.image)
+                fetchImage(url: book.image)
                                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text(book.title)
@@ -45,26 +46,34 @@ struct BookSearchRowView: View {
     }
 }
 
-func createImage(url: String) -> some View {
-    URLImage(url: URL(string: url)!,
-             inProgress: { progress in
-                ProgressView()
-                    .progressViewStyle(.circular)
-                    .frame(width: 75, height: 105) },
-             failure: { error,retry in
-                Rectangle()
-                    .foregroundColor(.lightGray)
-                    .frame(width: 75, height: 105)
-                    .overlay(content: {
-                        Text("sorry".localized())
-                            .foregroundColor(.white)
-                            .font(.system(size: 12, weight: .semibold))
-                    }) },
-             content: { image in
-                image
-                    .resizable()
-                    .frame(width: 75, height: 105)
-            })
+func fetchImage(url: String) -> some View {
+    AsyncImage(url: URL(string: url)) { image in
+        image.resizable()
+    } placeholder: {
+        ProgressView()
+    }
+    .frame(width: 75, height: 105)
+
+    
+//    URLImage(url: URL(string: url)!,
+//             inProgress: { progress in
+//                ProgressView()
+//                    .progressViewStyle(.circular)
+//                    .frame(width: 75, height: 105) },
+//             failure: { error,retry in
+//                Rectangle()
+//                    .foregroundColor(.lightGray)
+//                    .frame(width: 75, height: 105)
+//                    .overlay(content: {
+//                        Text("sorry".localized())
+//                            .foregroundColor(.white)
+//                            .font(.system(size: 12, weight: .semibold))
+//                    }) },
+//             content: { image in
+//                image
+//                    .resizable()
+//                    .frame(width: 75, height: 105)
+//            })
 
 }
 

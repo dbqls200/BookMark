@@ -28,7 +28,7 @@ struct BookSearchView: View {
             }
         }
         .onChange(of: searchKeyword, perform: { _ in
-            viewModel.requestSearchBookWithURLSession(query: searchKeyword)
+            viewModel.requestSearchBookWithAlamofire(query: searchKeyword)
         })
     }
 }

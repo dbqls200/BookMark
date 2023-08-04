@@ -16,7 +16,7 @@ class BookSearchViewModel: ObservableObject {
     
     @Published var bookList = [Book]()
     
-    private let baseURL: String = "https://openapi.naver.com/v1/search/book.json"
+    private let baseURL: String = Storage().naverBaseURL
     private let clientID: String = Storage().naverClientID
     private let clientSecret: String = Storage().naverClientSecret
     private let jsonDecoder: JSONDecoder = JSONDecoder()
