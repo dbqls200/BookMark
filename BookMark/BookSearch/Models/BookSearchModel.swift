@@ -16,7 +16,7 @@ struct BookList: Codable {
 
 struct Book: Codable, Hashable {
     let title: String
-    let image: String
+    var image: String = "https://"
     let author: String
     let publisher: String
     let description: String

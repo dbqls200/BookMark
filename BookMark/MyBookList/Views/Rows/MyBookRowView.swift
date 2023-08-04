@@ -20,7 +20,7 @@ struct MyBookRowView: View {
                 .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 130)
             
             HStack(spacing: 12) {
-                createImage(url: book.image)
+                fetchImage(url: book.image)
                                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text(book.title)
