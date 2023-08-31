@@ -14,8 +14,9 @@ struct MyBookRowView: View {
         
     var body: some View {
         ZStack {
-            Image("backBlueRoundedRect")
-                .resizable()
+            Rectangle()
+                .foregroundColor(Color("backBlue"))
+                .cornerRadius(16)
                 .padding(.horizontal, 12)
                 .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 130)
             

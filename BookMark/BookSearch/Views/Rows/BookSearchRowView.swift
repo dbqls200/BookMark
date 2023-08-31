@@ -14,8 +14,9 @@ struct BookSearchRowView: View {
         
     var body: some View {
         ZStack {
-            Image("backYellowRoundedRect")
-                .resizable()
+            Rectangle()
+                .foregroundColor(Color("backYellow"))
+                .cornerRadius(16)
                 .padding(.horizontal, 12)
                 .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 130)
             
@@ -48,7 +49,9 @@ struct BookSearchRowView: View {
 
 func fetchImage(url: String) -> some View {
     AsyncImage(url: URL(string: url)) { image in
-        image.resizable()
+        image
+            .resizable()
+            .padding(4)
     } placeholder: {
         ProgressView()
     }
